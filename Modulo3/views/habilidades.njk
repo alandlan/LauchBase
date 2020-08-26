@@ -1,0 +1,40 @@
+{% extends "layout.njk" %}
+
+{% block head%}
+    <title>Habilidades - Alan Martins</title>
+    <link rel="stylesheet" href="./css/styles.css">        
+    <link rel="stylesheet" href="./css/habilidades.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" >
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap-grid.css" >
+{% endblock%}
+
+{% block content %}
+
+    <div id=wrapper>
+        <h1>Habilidades</h1>
+    </div>
+
+    <section class="habilidades container-fluid">
+        <div class="row" >
+
+            {% for item in items %}
+
+                <div class="habilidade col-md-4 col-sm-12" >
+                    <div class="card__image-container">
+                        <img class="{{item.class}}" src="{{item.image}}" height="100px" alt="{{item.title}}"/>
+                    </div>
+                    <div class="habilidade__content">
+                        <p>{{item.title}}</p>
+                    </div>
+                    <div class="habilidade__info">
+                        <p>{{item.info}}</p>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+            
+        </div>
+    </section>
+
+{% endblock %}

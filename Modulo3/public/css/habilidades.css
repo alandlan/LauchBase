@@ -10,11 +10,10 @@ h1{
 .habilidade__content{
     margin-top: 10px;
 }
-.card__image-container img{
-    border-radius: 50px;
-}
-
 .habilidade__content{
     color: #fff;
+}
+.logoArredondado{
+    border-radius: 50px;
 }
 
