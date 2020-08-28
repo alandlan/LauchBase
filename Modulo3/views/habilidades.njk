@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/habilidades.css">
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" >
     <link rel="stylesheet" href="./css/bootstrap/bootstrap-grid.css" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock%}
 
 {% block content %}
@@ -26,7 +27,7 @@
                     <div class="habilidade__content">
                         <p>{{item.title}}</p>
                     </div>
-                    <div class="habilidade__info">
+                    <div class="habilidade__info" style="display: none">
                         <p>{{item.info}}</p>
                     </div>
                 </div>
@@ -36,5 +37,24 @@
             
         </div>
     </section>
+
+    <div class="modal-overlay">
+        <div class="modalHabilidade">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+
+            <header>
+
+            </header>
+            <section>
+
+            </section>
+
+
+        </div>
+    </div>
+
+    <script src="./javascript/scripts.js"></script>
 
 {% endblock %}
