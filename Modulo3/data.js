@@ -4,6 +4,7 @@ module.exports = [
         title: "Asp.Net Core - C#",
         info: "Info",
         image: "/img/asp_net_core_logo.jpg",
+        knowledges: "1",
         class: "logoArredondado"
     },
     {
@@ -11,6 +12,7 @@ module.exports = [
         title: "React Native JS",
         info: "Info",
         image: "/img/logo_react_native_js.png",
+        knowledges: "0",
         class: "logoArredondado"
     },
     {
@@ -18,6 +20,7 @@ module.exports = [
         title: "Node JS",
         info: "Info",
         image: "/img/nodejs_logo.png",
+        knowledges: "0",
         class: "logoArredondado"
     },
     {
@@ -25,6 +28,7 @@ module.exports = [
         title: "SQL Server",
         info: "Info",
         image: "/img/sql_server_logo.png",
+        knowledges: "1",
         class: "logoArredondado"
     },
     {
@@ -32,6 +36,7 @@ module.exports = [
         title: "Html",
         info: "Info",
         image: "/img/html_logo.png",
+        knowledges: "1",
         class: ""
     },
     {
@@ -39,6 +44,7 @@ module.exports = [
         title: "Css",
         info: "Info",
         image: "/img/css_logo.png",
+        knowledges: "1",
         class: ""
     },
     {
@@ -46,6 +52,7 @@ module.exports = [
         title: "JavaScript",
         info: "Info",
         image: "/img/js_logo.png",
+        knowledges: "0",
         class: ""
     },
     {
@@ -53,6 +60,7 @@ module.exports = [
         title: "GitHub",
         info: "Info",
         image: "/img/git_logo.png",
+        knowledges: "1",
         class: "logoArredondado"
     }
 ]

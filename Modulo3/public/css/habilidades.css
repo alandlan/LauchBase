@@ -62,3 +62,16 @@ h1{
     font-size: 24px;
     text-align: center;
 }
+
+.card__image-container{
+    position: relative;
+}
+
+.estudando{
+    background: #d39e00;
+    position: absolute;
+    right: 85px;
+    border-radius: 10px;
+    top: 85px;
+    font-weight: bold;
+}

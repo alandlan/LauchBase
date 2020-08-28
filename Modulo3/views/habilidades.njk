@@ -20,10 +20,15 @@
 
             {% for item in items %}
 
-                <div class="habilidade col-md-4 col-sm-12" >
+                <div class="habilidade col-md-4 col-sm-6" >
                     <div class="card__image-container">
                         <img class="{{item.class}}" src="{{item.image}}" height="100px" alt="{{item.title}}"/>
                     </div>
+                    {% if item.knowledges == "0" %}
+                    <div class="estudando">
+                            <span style="color:#000"> - Estudando - </span>
+                    </div>
+                    {% endif%}
                     <div class="habilidade__content">
                         <p>{{item.title}}</p>
                     </div>
