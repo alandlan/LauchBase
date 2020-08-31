@@ -1,0 +1,56 @@
+{% extends "layout.njk" %}
+
+{% block head%}
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/recipes.css">  
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" >
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap-grid.css" >
+    <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 1200px)' href='./css/tablet.css' />
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="./css/smartphone.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+{% endblock%}
+
+    
+
+{% block content %}
+    <section class="produtos row">
+        {% for recipe in recipes %}
+            <article class="produto col-lg-4 col-md-6 col-sm-12">
+                <div class="produtoConteudo">
+                    <img src="{{recipe.img}}" width="350" height="140" alt="" class="recipe__image">
+                    <h5 class="recipe__title">{{recipe.title}}</h5>
+                    <span class="recipe__description" style="display: none">
+                        {{recipe.description}}
+                    </span>
+                    <p>por {{recipe.chef}}</p>
+                </div>
+            </article>
+        {% endfor %}
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modalRecipe">
+           
+            <div class="modalRecipeImg">
+                <img/>
+            </div>
+            <header class="modalRecipeHeader">
+
+            </header>
+            <section class="modalRecipeSection">
+
+            </section>
+
+            <div class="close-modal">
+                <a >Fechar Modal</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./scripts/scripts.js"></script>
+
+{% endblock %}

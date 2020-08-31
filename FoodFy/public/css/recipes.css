@@ -1,0 +1,91 @@
+.content{
+    margin: 10vh 0vh;
+    display: flex;
+    width: 100%;
+}
+
+.produtos{
+    margin-top: 10vh;
+}
+
+.produtos h3{
+    font-weight: bold;
+}
+
+.recipe__image{
+    border-radius: 30px;
+}
+
+/* MODAL */
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modalRecipe{
+    background-color: #fff;
+    width: 40%;
+    height: auto;
+    margin: 5vh auto;
+    position: relative;
+    border-radius: 30px;
+}
+
+.modalRecipe .close-modal{
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* MODAL Active */
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+    left: 0px;
+}
+
+.modalRecipe header{
+    background-color: #fff;
+    font-size: 30px;
+    border: none;
+}
+
+.modalHabilidade section{
+    font-size: 24px;
+    text-align: center;
+}
+
+.card__image-container{
+    position: relative;
+}
+
+.modalRecipe img{
+    width: 90%;
+    height: 40%;
+}
+
+.modalRecipeImg{
+    text-align: center;
+    padding: 22px;
+}
+
+.modalRecipeImg img{
+    border-radius: 30px;
+}
+
+.modalRecipeHeader{
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.modalRecipeSection{
+    margin-bottom: 5vh;
+    padding-right: 22px;
+    padding-left: 22px;
+}

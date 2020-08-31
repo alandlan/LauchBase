@@ -1,9 +1,12 @@
 const { response } = require("express");
-
-const express = require('express');
 const nunjucks = require('nunjucks');
 
+const express = require('express');
+const recipes = require("./recipes");
+
 const server = express();
+
+
 
 server.use(express.static('public'));
 
@@ -16,11 +19,15 @@ nunjucks.configure("views",{
 })
 
 server.get("/",function(req,res){
-    return res.render("home")
+    return res.render("home", { recipes })
 });
 
 server.get("/about",function(req,res){
     return res.render("about")
+});
+
+server.get("/recipes",function(req,res){
+    return res.render("recipes", { recipes })
 });
 
 
