@@ -1,0 +1,35 @@
+.info{
+    background: #FBDFDB;
+    border-radius: 30px;
+    display: flex;
+}
+
+.content{
+    margin: 10vh 0vh;
+    display: flex;
+    width: 100%;
+}
+
+.slogan{
+    width: 50%;
+    align-items: center;
+}
+
+.slogan h3{
+    font-size: 32px;
+}
+
+.slogan p{
+    font-size: 24px;
+}
+
+.sloganContent{
+    text-align: justify;
+    width: 81%;
+    margin-left: 10vh;
+}
+
+.image{
+    width: 50%;
+    text-align: center;
+}

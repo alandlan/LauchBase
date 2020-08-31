@@ -1,0 +1,26 @@
+.wrapper{
+    font-family: 'Roboto', sans-serif;
+    margin-right: 20vh;
+    margin-left: 20vh;
+}
+
+header{
+    display: flex;
+    padding: 20px 0px;
+}
+
+.headerLogo{
+    margin-right: 50px;
+    font-size: 20px;
+    margin-top: -3px;
+}
+
+.headerItems{
+    
+}
+
+.headerItems a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #000;
+}
