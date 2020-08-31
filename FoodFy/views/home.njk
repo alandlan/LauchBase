@@ -2,7 +2,12 @@
 
 {% block head%}
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/home.css">  
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" >
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap-grid.css" >
+    <link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 1200px)' href='./css/tablet.css' />
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="./css/smartphone.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 {% endblock%}
 
@@ -27,7 +32,61 @@
         </div>
     </section>
 
-    <section class="produtos">
+
+    
+
+    <section class="produtos row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>Mais acessadas</h3>
+        </div>
+
+        <article class="produto col-lg-4 col-md-6 col-sm-12">
+            <div class="produtoConteudo">
+                <img src="./img/burger.png" width="370" height="150" alt="" class="imagemProduto">
+                <h5>Triplo bacon burger</h5>
+                <p>por Jorge Relato</p>
+            </div>
+        </article>
+
+        <article class="produto col-lg-4 col-md-6 col-sm-12">
+            <div class="produtoConteudo">
+                <img src="./img/pizza.png" width="370" height="150" alt="" class="imagemProduto">
+                <h5>Pizza 4 estações</h5>
+                <p>por Fabiana Melo</p>
+            </div>
+        </article>
+
+        <article class="produto col-lg-4 col-md-6 col-sm-12">
+            <div class="produtoConteudo">
+                <img src="./img/espaguete.png" width="370" height="150" alt="" class="imagemProduto">
+                <h5>Espaguete ao alho</h5>
+                <p>por Júlia Kinoto</p>
+            </div>
+        </article>
+
+        <article class="produto col-lg-4 col-md-6 col-sm-12">
+            <div class="produtoConteudo">
+                <img src="./img/lasanha.png" width="370" height="150" alt="" class="imagemProduto">
+                <h5>Lasanha mac n' cheese</h5>
+                <p>por Juliano Vieira</p>
+            </div>
+        </article>
+
+        <article class="produto col-lg-4 col-md-6 col-sm-12">
+            <div class="produtoConteudo">
+                <img src="./img/doce.png" width="370" height="150" alt="" class="imagemProduto">
+                <h5>Docinhos pão-do-céu</h5>
+                <p>por Ricardo Golvea</p>
+            </div>
+        </article>
+
+        <article class="produto col-lg-4 col-md-6 col-sm-12">
+            <div class="produtoConteudo">
+                <img src="./img/asinhas.png" width="370" height="150" alt="" class="imagemProduto">
+                <h5>Asinhas de frango ao barbecue</h5>
+                <p>por Vania Steroski</p>
+            </div>
+        </article>
 
     </section>
 {% endblock %}

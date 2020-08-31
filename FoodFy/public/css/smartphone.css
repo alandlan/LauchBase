@@ -1,0 +1,18 @@
+/* @media only screen 
+and (min-device-width: 701px)
+and (max-device-width: 1220px)
+{
+    .wrapper{
+        margin-right: 10vh !important;
+        margin-left: 10vh !important;
+    }
+} */
+
+
+
+@media (max-width: 700px){
+    .wrapper{
+        margin-right: 5vh !important;
+        margin-left: 5vh !important;
+    }
+}
