@@ -19,6 +19,11 @@ server.get("/",function(req,res){
     return res.render("home")
 });
 
+server.get("/about",function(req,res){
+    return res.render("about")
+});
+
+
 server.listen(5001, function(){
     console.log("🚀 Server is running")
 });
