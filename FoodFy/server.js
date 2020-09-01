@@ -30,7 +30,11 @@ server.get("/recipes",function(req,res){
     return res.render("recipes", { recipes })
 });
 
+server.use(function(req,res){
+    res.status(404).render("recipes")
+});
 
-server.listen(5001, function(){
+
+server.listen(5000, function(){
     console.log("🚀 Server is running")
 });
