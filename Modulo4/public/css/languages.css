@@ -1,3 +1,8 @@
+:root{
+    --primary-color: #7159c1 !important;
+    --second-color: rgb(29, 27, 27) !important;
+}
+
 .card{
     background-color: #fff;
     width: 800px;
@@ -33,3 +38,36 @@
         opacity: 1;
     }
 }
+
+/* Details */
+.details{
+    padding: 20px;
+}
+
+.details h2{
+    color: var(--primary-color);
+}
+
+.details .item{
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+    padding: 16px 0;
+}
+
+.item-filho{
+    margin-left: 20px;
+}
+
+.details .item ul{
+    margin-left: 20px;
+}
+
+.details .item ul li{
+    list-style: none;
+    margin-right: 10px;
+    float: left;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
